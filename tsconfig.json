@@ -19,7 +19,11 @@
     "module": "ES2022",
     "types": [
       "vitest/globals" // Only to support the global types for testing
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+    },
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
