@@ -13,6 +13,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 - [Angular Testing Library](https://testing-library.com/docs/angular-testing-library/intro) for testing Angular components
 - [Playwright](https://playwright.dev/) for End-to-End (E2E) testing
 - [Storybook](https://storybook.js.org/) for component-driven development
+- [Compodoc](https://compodoc.app/) for generating documentation
 - Pre-configured `.cursorrules` file to work with [Cursor IDE](https://cursor.com/)
 
 ## Requirements
@@ -86,6 +87,42 @@ For a complete list of available schematics (such as `components`, `directives`,
 ```bash
 ng generate --help
 ```
+
+## Other Commands
+
+### Linting
+
+To lint your code, run:
+
+```bash
+npm run lint
+```
+
+### Storybook (Optional)
+
+Storybook is a tool for developing UI components in isolation from your application. To start Storybook, run:
+
+```bash
+npm run storybook
+```
+
+Once the server is running, open your browser and navigate to `http://localhost:6006/`.
+
+### Compodoc (Optional)
+
+Compodoc is a documentation tool for Angular applications. To generate the documentation, run:
+
+```bash
+npm run compodoc:build
+```
+
+Once the documentation is generated, you can open it in your browser by running:
+
+```bash
+npm run compodoc:serve
+```
+
+> You can also simply run `npm run compodoc:build-and-serve` to generate and serve the documentation in one command.
 
 ## Additional Resources
 
