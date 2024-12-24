@@ -128,6 +128,17 @@ npm run compodoc:serve
 
 > You can also simply run `npm run compodoc:build-and-serve` to generate and serve the documentation in one command.
 
+## Recommendations
+
+### IDEs
+
+- [Cursor IDE](https://cursor.com/)
+- [VSCode](https://code.visualstudio.com/)
+
+### Libraries
+
+- Icons: [Lucide Angular](https://lucide.dev/guide/packages/lucide-angular)
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
