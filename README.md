@@ -16,6 +16,10 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 - [Compodoc](https://compodoc.app/) for generating documentation
 - Pre-configured `.cursorrules` file to work with [Cursor IDE](https://cursor.com/)
 
+## Folder Structure
+
+The project structure is based on the [Angular File Structure Guide](https://angular.dev/reference/configs/file-structure) and [Fractal Design](https://hackernoon.com/fractal-a-react-app-structure-for-infinite-scale-4dab943092af).
+
 ## Requirements
 
 - [Node.js](https://nodejs.org/) 20+ and npm
