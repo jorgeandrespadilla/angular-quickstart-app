@@ -12,7 +12,10 @@
     "e2e": "ng e2e",
     "lint": "ng lint",
     "storybook": "ng run angular-quickstart-app:storybook",
-    "build-storybook": "ng run angular-quickstart-app:build-storybook"
+    "storybook:build": "ng run angular-quickstart-app:build-storybook",
+    "compodoc:build": "compodoc -p tsconfig.doc.json",
+    "compodoc:serve": "compodoc -s",
+    "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s"
   },
   "engines": {
     "node": "^20.0.0",
