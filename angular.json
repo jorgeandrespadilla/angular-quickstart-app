@@ -86,6 +86,17 @@
               "src/**/*.html"
             ]
           }
+        },
+        "e2e": {
+          "builder": "playwright-ng-schematics:playwright",
+          "options": {
+            "devServerTarget": "angular-quickstart-app:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-quickstart-app:serve:production"
+            }
+          }
         }
       }
     }

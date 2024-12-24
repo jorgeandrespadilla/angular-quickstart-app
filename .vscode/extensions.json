@@ -4,6 +4,7 @@
     "angular.ng-template",
     "dbaeumer.vscode-eslint",
     "vitest.explorer",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "ms-playwright.playwright"
   ]
 }
