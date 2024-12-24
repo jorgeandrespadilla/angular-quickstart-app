@@ -1,6 +1,6 @@
 # Angular Quickstart App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+This project is a quickstart template for Angular applications using modern tools. It includes a set of tools and configurations to help you get started with Angular development. The project is pre-configured with a modern build system, testing tools, and other useful features to help you build high-quality Angular applications.
 
 ## Features
 
