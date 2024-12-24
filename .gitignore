@@ -46,4 +46,8 @@ Thumbs.db
 /playwright-report/
 /playwright/.cache/
 
+# Storybook
 *storybook.log
+
+# Compodoc
+documentation/
