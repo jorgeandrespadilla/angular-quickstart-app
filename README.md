@@ -40,8 +40,10 @@ Every variable should be prefixed with `NG_APP_` to be picked up by the Angular 
 
 The priority order for environment variables is as follows:
 1. Environment variables set in the system or the CLI session - e.g., `NG_APP_API_URL=https://api.example.com npm run start`
-2. `.env.[environment]` (e.g., `.env.production`, `.env.development`) - Useful for overriding environment variables based on the environment
+2. `.env.[environment]` (e.g., `.env.development`, `env.test`, `.env.production`) - Useful for overriding environment variables based on the environment
 3. `.env` - The default environment file
+
+> **Note:** You can use environment variables inside `index.html` using the following syntax: `%NG_APP_MY_VARIABLE%`.
 
 ## Running the Application
 
@@ -78,9 +80,11 @@ npm run test
 > To run the tests in watch mode, use `npm run test:watch`. 
 
 To use all the available Vitest options, just run `vitest` command in the terminal:
-- `npx vitest` to run the tests in watch mode (tests are run in watch mode by default)
-- `npx vitest --coverage` to generate a coverage report
-- `npx vitest --ui` to run the tests using Vitest UI Mode
+- `npx cross-env NODE_ENV=test vitest` to run the tests in watch mode (tests are run in watch mode by default)
+- `npx cross-env NODE_ENV=test vitest --coverage` to generate a coverage report
+- `npx cross-env NODE_ENV=test vitest --ui` to run the tests using Vitest UI Mode
+
+> **Note:** By default, Vitest sets the `NODE_ENV` to `test` when running the tests. However, we prefer to explicitly set the `NODE_ENV` to `test` to avoid any issues.
 
 ### End-to-End (E2E) testing
 

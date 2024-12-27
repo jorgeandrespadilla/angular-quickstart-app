@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       angular(),
     ],
+    envPrefix: 'NG_APP_',
     test: {
       globals: true,
       environment: 'jsdom',
