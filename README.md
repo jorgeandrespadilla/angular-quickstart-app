@@ -7,6 +7,7 @@ This project is a quickstart template for Angular applications using modern tool
 - Angular 19 (with Node.js 20)
 - TypeScript for type-checking
 - SCSS for styling
+- Support for environment variables using `.env` files
 - [esbuild](https://esbuild.github.io/) and [Vite](https://vitejs.dev/) for the build system (see more about the new build system [here](https://angular.dev/tools/cli/build-system-migration))
 - [ESLint](https://eslint.org/) for code linting
 - [Vitest](https://vitest.dev/) for unit testing
@@ -29,6 +30,18 @@ The project structure is based on the [Angular File Structure Guide](https://ang
 
 1. Clone this repository.
 2. Run `npm install` to install the project dependencies.
+3. Create a copy of the `.env.example` file and rename it to `.env`. Update the environment variables as needed.
+
+## Environment Variables
+
+The `.env` file is used to store sensitive information that should not be committed to the repository.
+
+Every variable should be prefixed with `NG_APP_` to be picked up by the Angular application (to avoid conflicts with other environment variables), and can be accessed using the `import.meta.env` object.
+
+The priority order for environment variables is as follows:
+1. Environment variables set in the system or the CLI session - e.g., `NG_APP_API_URL=https://api.example.com npm run start`
+2. `.env.[environment]` (e.g., `.env.production`, `.env.development`) - Useful for overriding environment variables based on the environment
+3. `.env` - The default environment file
 
 ## Running the Application
 
