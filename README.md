@@ -77,12 +77,10 @@ To execute unit tests with Vitest, use the following command:
 npm run test
 ```
 
-> To run the tests in watch mode, use `npm run test:watch`. 
-
-To use all the available Vitest options, just run `vitest` command in the terminal:
-- `npx cross-env NODE_ENV=test vitest` to run the tests in watch mode (tests are run in watch mode by default)
-- `npx cross-env NODE_ENV=test vitest --coverage` to generate a coverage report
-- `npx cross-env NODE_ENV=test vitest --ui` to run the tests using Vitest UI Mode
+Additional commands:
+- To run the tests in watch mode, use `npm run test:watch`.
+- To run the tests using Vitest UI Mode, use `npm run test:ui`.
+- To generate a coverage report, use `npm run test:coverage`.
 
 > **Note:** By default, Vitest sets the `NODE_ENV` to `test` when running the tests. However, we prefer to explicitly set the `NODE_ENV` to `test` to avoid any issues.
 
